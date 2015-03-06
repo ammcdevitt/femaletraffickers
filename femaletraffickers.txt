@@ -1,0 +1,44 @@
+import csv
+#imports csv library, which contains specific functions and classes
+
+f = open('femaletraffickers.csv', 'rU')
+#femaletraffickers.csv is a file data type
+
+g = csv.reader(f)
+#a period is called a namespace (library.function). this helps if you are using multiple libraries in one program and there are similar-named functions between the 2 libraries
+
+state = []
+#creating an empty list
+victim = []
+trafficker = []
+role = []
+newssource = []
+date = []
+punishment = []
+task = []
+traffickingtype = []
+courtcase = []
+
+for row in g:
+	state.append(row [0]) 
+	victim.append(row [1])
+	trafficker.append(row [2])
+	role.append(row [3])
+	newssource.append(row [4])
+	date.append(row [5])
+	punishment.append(row [6])
+	task.append(row [7])
+	traffickingtype.append(row [8])
+	courtcase.append(row [9])
+
+print victim 
+
+#print state
+#print trafficker
+#print role
+#print newssource
+#print date
+#print punishment
+#print task
+#print traffickingtype
+#print courtcase
