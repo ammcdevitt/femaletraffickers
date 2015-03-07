@@ -1,0 +1,9 @@
+trafficking = open('femaletraffickers.csv')
+
+for line in trafficking:
+	print line
+	#opening a file and reading all the lines in a file
+
+state = []
+
+for row in trafficking
